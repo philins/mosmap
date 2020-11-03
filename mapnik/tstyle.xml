@@ -1,0 +1,2982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map buffer-size="256" background-color="#ede9da" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+	<FontSet name="book-fonts">
+		<Font face-name="DejaVu Sans Book" />
+	</FontSet>
+	<Style name="Районы">
+		<Rule>
+			&maxscale_zoom11;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#000000" stroke-width="1" stroke-opacity="0.75" stroke-dasharray="2,3" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom14;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+		</Rule>
+	</Style>
+	<Style name="Зеленые_насаждения">
+		<Rule>
+			&maxscale_zoom9;
+			<PolygonSymbolizer fill="#8dcfb5" />
+		</Rule>
+	</Style>
+	<Style name="Дачные_участки_поляна">
+		<Rule>
+			&maxscale_zoom9; 
+			<PolygonSymbolizer fill="#DFFFDF" />
+		</Rule>
+	</Style>
+	<Style name="Сады">
+		<Rule>
+			&maxscale_zoom9;
+			<PolygonSymbolizer fill="#8dcfb5" />
+		</Rule>
+	</Style>
+	<Style name="Нежилые кварталы">
+		<Rule>
+			&maxscale_zoom1; 
+			<PolygonSymbolizer fill="#E9E4E5" />
+		</Rule>
+	</Style>
+	<Style name="Кварталы">
+		<Rule>
+			&maxscale_zoom7;
+			&minscale_zoom13;
+			<PolygonSymbolizer fill="#f6f7f0" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom14;
+			<PolygonSymbolizer fill="#f6f7f0" />
+		</Rule>
+	</Style>
+	<Style name="Кладбище">
+		<Rule>
+			&maxscale_zoom7;
+			&minscale_zoom12;
+			<PolygonSymbolizer fill="#E5F5DC" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom13;
+			<PolygonSymbolizer fill="#E5F5DC" />
+			<LineSymbolizer stroke="#D4EEBF" stroke-width="0.8" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom14;
+			
+			<PolygonSymbolizer fill="#E5F5DC" />
+			<LineSymbolizer stroke="#D4EEBF" stroke-width="0.8" />
+		</Rule>
+	</Style>
+	<Style name="Метро_выходы">
+		<Rule>
+			&maxscale_zoom17;
+			<PointSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/e16/[jil].png" allow-overlap="false" /> 
+		</Rule>
+	</Style>
+	<Style name="Значки">
+		<Rule>
+		<Filter>[jil] = 461</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Kino.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 461</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Kino.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1942</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Sinagogi.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1942</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Sinagogi.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1943</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Mecheti.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1943</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Mecheti.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1082</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Pravoslavn.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1082</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Pravoslavn.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 452</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Kafe.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 452</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Kafe.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 63</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Restoranu.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 63</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Restoranu.svg" transform="scale(0.8,0.8)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6060</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Oteli_gostinicy.svg" transform="scale(0.4,0.4)" opacity="0.6"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6060</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Attractions/Oteli_gostinicy.svg" transform="scale(0.8,0.8)" spacing="200" opacity="0.6"/> 
+		</Rule>
+	</Style>
+	<Style name="Велодорожка">
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="#9999ff" stroke-width="2" stroke-opacity="1" stroke-dasharray="2,2" stroke-linecap="round"/>
+		</Rule>
+	</Style>
+	<Style name="Округа">
+		<Rule>
+			&maxscale_zoom10;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="#d09090" stroke-width="2" stroke-opacity="0.5" />
+			<LineSymbolizer stroke="#004000" stroke-width="1" stroke-opacity="0.8" stroke-dasharray="5,3" />
+		</Rule>
+	</Style>
+	<Style name="Кремлевская_стена">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="#A39E8D" stroke-width="4"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom15;
+			<BuildingSymbolizer fill="#A39E8D" height="0.00005" fill-opacity="1" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 149</Filter> 
+			&maxscale_zoom15;
+			<BuildingSymbolizer fill="#A39E8D" height="0.00009" fill-opacity="1" />
+		</Rule>
+	</Style>
+	<Style name="Болото">
+		<Rule>
+			&maxscale_zoom1;
+			<LineSymbolizer stroke="#B5D8AF" stroke-width="1" />
+			<PolygonSymbolizer fill="#B5D8AF" />
+		</Rule>
+	</Style>
+	<Style name="Железные дороги">
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom9;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#BBBBBB" stroke-width="3"/>
+			<LineSymbolizer stroke="#FFFFFF" stroke-width="1.6" stroke-dasharray="10,10"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom14;
+			<LineSymbolizer stroke="#C2C2C2" stroke-width="3"/>
+			<LineSymbolizer stroke="#FFFFFF" stroke-width="1.6" stroke-dasharray="10,10"/>
+		</Rule>
+	</Style>
+	<Style name="Пристани">
+		<Rule>
+			&maxscale_zoom14;
+			<PolygonSymbolizer fill="#948f80" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Pristani.svg" transform="scale(0.5,0.5)"/> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/Pristani.svg" /> 
+		</Rule>
+	</Style>
+	<Style name="Иконки остановки">
+		<Rule>
+			&maxscale_zoom16;
+			&minscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/bus.svg" transform="scale(0.5,0.5)"/> 
+		</Rule>
+	</Style>
+	<Style name="Иконки платформы">
+		<Rule>
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/tram.svg" transform="scale(0.5,0.5)"/> 
+		</Rule>
+		<Rule>
+			&maxscale_zoom17;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/tram.svg"/> 
+		</Rule>
+	</Style>
+	<Style name="Реки (лин.)">
+		<Rule>
+			&maxscale_zoom1;
+			<LineSymbolizer stroke="#5cafeb" stroke-width="1" smooth="1" />
+		</Rule>
+	</Style>
+	<Style name="Реки (площ.)">
+		<Rule>
+			&maxscale_zoom7;
+			&minscale_zoom12;
+			<PolygonSymbolizer fill="#5cafeb" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom13;
+			<PolygonSymbolizer fill="#5cafeb" />
+		</Rule>
+	</Style>
+	<Style name="Остров">
+		<Rule>
+			&maxscale_zoom1;
+			<LineSymbolizer stroke="#DFDFDF" stroke-width="1"  />
+			<PolygonSymbolizer fill="#DFDFDF" />
+		</Rule>
+	</Style>
+	<Style name="Город">
+		<Rule>
+			<Filter>[jil] &lt; 1000</Filter> 
+			&maxscale_zoom12;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="11" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+			<Filter>[jil] &gt;= 1000 and [jil] &lt; 5000</Filter> 
+			&maxscale_zoom11;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="13" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+			<Filter>[jil] &gt;= 5000 and [jil] &lt; 10000</Filter> 
+			&maxscale_zoom10;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+			<Filter>[jil] &gt;= 10000 and [jil] &lt; 50000</Filter> 
+			&maxscale_zoom9;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="15" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+			<Filter>[jil] &gt;= 50000 and [jil] &lt; 100000</Filter> 
+			&maxscale_zoom9;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="16" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+			<Filter>[jil] &gt;= 100000</Filter> 
+			&maxscale_zoom9;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="#000000" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3" />
+			<TextSymbolizer avoid-edges="true" size="17" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF" minimum-distance="10" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Кремль">
+		<Rule>
+			&maxscale_zoom9;
+			&minscale_zoom9;
+			<TextSymbolizer avoid-edges="true" size="19" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="#FFFFFF">[obj_fullname]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Дома">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom14;
+			<PolygonSymbolizer fill="#e6dfc7" fill-opacity="0.7"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<PolygonSymbolizer fill="#e6dfc7" fill-opacity="1"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<BuildingSymbolizer fill="#e6dfc7" height="[floors]" fill-opacity="1" />
+		</Rule>
+	</Style>
+	<Style name="Дома_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 48</Filter>
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<TextSymbolizer  allow-overlap="false" size="10" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="0.5" halo-fill="#FFFFFF" wrap-width="0" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 48</Filter>
+			&maxscale_zoom17;
+			<TextSymbolizer  allow-overlap="false" size="12" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" halo-fill="#FFFFFF" wrap-width="0" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Промплощадки">
+		<Rule>
+			&maxscale_zoom9;
+			<PolygonSymbolizer fill="#d6d2c3" />
+		</Rule>
+	</Style>
+	<Style name="Платформы">
+		<Rule>
+			&maxscale_zoom14;
+			<PolygonSymbolizer fill="#948f80" />
+		</Rule>
+	</Style>
+	<Style name="Парковки">
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="#3333F9" stroke-width="3"/>
+		</Rule>
+	</Style>
+	<Style name="Метро_линии_надземные">
+		<Rule>
+			&maxscale_zoom17;
+			<LineSymbolizer stroke="#B99999" stroke-width="3"/>
+			<LineSymbolizer stroke="#FFFFFF" stroke-width="1.6" stroke-dasharray="10,10"/>
+		</Rule>
+	</Style>
+	<Style name="Метро_линии">
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ef2e23" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ef2e23" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#4bba5f" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#4bba5f" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#0178c0" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#0178c0" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#17c1f4" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#17c1f4" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#985038" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#985038" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#f58333" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#f58333" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#8e479c" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#8e479c" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ffcc32" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffcc32" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 9</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#a1a2a2" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 9</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#a1a2a2" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#b3d445" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#b3d445" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 11</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#79cdce" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 11</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#79cdce" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 12</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#a8bde2" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 12</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#a8bde2" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 13</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 13</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffffff" stroke-width="6" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 31</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 31</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffffff" stroke-width="6" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 32</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 32</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffffff" stroke-width="6" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 14</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#79cdce" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 14</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#79cdce" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 15</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#DE64A1" stroke-width="3" stroke-opacity="0.7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 15</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#DE64A1" stroke-width="6" stroke-opacity="0.5" smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Метро_линии_подложка">
+		<Rule>
+		<Filter>[jil] = 13</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#ffcec6" stroke-width="4" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 13</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffcec6" stroke-width="8" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 31</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#f7a600" stroke-width="4" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 31</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#f7a600" stroke-width="8" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 32</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="#e94282" stroke-width="4" stroke-opacity="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 32</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#e94282" stroke-width="8" stroke-opacity="1" smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Парки">
+		<Rule>
+			&maxscale_zoom9;
+			<LineSymbolizer stroke="#8dcfb5" />
+		</Rule>
+	</Style>
+	<Style name="Стадионы">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom14;
+			<PolygonSymbolizer fill="#D8D8B0" />
+			<LineSymbolizer stroke="#B5924C" stroke-opacity="0.5"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom15;
+			<PolygonSymbolizer fill="#D8D8B0" />
+			<LineSymbolizer stroke="#B5924C" stroke-opacity="0.5"/>
+			<TextSymbolizer avoid-edges="true" size="10" fill="#656565" opacity="1" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="гаражи">
+		<Rule>
+			&maxscale_zoom14;
+			<PolygonSymbolizer fill="#C8C8C8" fill-opacity="0.5"/>
+			<LineSymbolizer stroke="#C0C0C0" stroke-width="1"/>
+		</Rule>
+	</Style>
+	<Style name="Ограды замк.">
+		<Rule>
+			&maxscale_zoom14;
+			<LineSymbolizer stroke="#000000" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+		</Rule>
+	</Style>
+	<Style name="Ограды">
+		<Rule>
+			&maxscale_zoom14;
+			<LineSymbolizer stroke="#000000" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+		</Rule>
+	</Style>
+	<Style name="Тоннель подложка">
+		<Rule>
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="11"/>
+		</Rule>
+	</Style>
+	<Style name="Дороги">
+		<Rule>
+			&maxscale_zoom11;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.3" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom12;
+			&minscale_zoom12;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.5" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="7" stroke-linejoin="round"/>
+		</Rule>
+	</Style>
+	<Style name="Дворовые_проезды_Подложка">
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="6"  smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Дворовые_проезды">
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="5"  smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Дворовые_проезды_односторонние">
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="5"  smooth="1"/>
+			&arrow;
+		</Rule>
+	</Style>
+	<Style name="Дороги1">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="3" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="5" stroke-linejoin="round" />
+		</Rule>
+	</Style>
+	<Style name="Дороги_текст">
+		<Rule>
+		<Filter>[obj_class_id] = 7 and [jil] &gt;= 4</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom13;
+			<TextSymbolizer avoid-edges="true" size="12" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_class_id] = 7 and [jil] &lt; 4</Filter>
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="12" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_class_id] = 7 and [jil] &gt;= 4</Filter>
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_class_id] = 7 and [jil] &lt; 4</Filter>
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_class_id] = 7 and [jil] &gt;= 5</Filter>
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="16" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Дорога главная1">
+		<Rule>
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="12"  />
+		</Rule>
+	</Style>
+	<Style name="Дорога главная2">
+		<Rule>
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="10"  />
+		</Rule>
+	</Style>
+	<Style name="Большая_дорога_подложка">
+		<Rule>
+			&maxscale_zoom9;
+			&minscale_zoom10;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="6"  />
+		</Rule>
+	</Style>
+	<Style name="Большая_дорога">
+		<Rule>
+			&maxscale_zoom9;
+			&minscale_zoom10;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="4"  />
+		</Rule>
+	</Style>
+	<Style name="Средняя_дорога_подложка">
+		<Rule>
+			&maxscale_zoom9;
+			&minscale_zoom10;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+	</Style>
+	<Style name="Средняя_дорога">
+		<Rule>
+			&maxscale_zoom9;
+			&minscale_zoom10;
+			<LineSymbolizer stroke="#ffffdd" stroke-width="2"  />
+		</Rule>
+	</Style>
+	<Style name="Дорога_пешеходная">
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffffff" stroke-width="6"/>
+			<LineSymbolizer stroke="#aaaabb" stroke-width="4" stroke-dasharray="1,1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			<LineSymbolizer stroke="#ffffff" stroke-width="12"/>
+			<LineSymbolizer stroke="#aaaabb" stroke-width="8" stroke-dasharray="3,3"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#ffffff" stroke-width="3"/>
+			<LineSymbolizer stroke="#aaaabb" stroke-width="2" stroke-dasharray="1,1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom17;
+			<LineSymbolizer stroke="#ffffff" stroke-width="6"/>
+			<LineSymbolizer stroke="#aaaabb" stroke-width="4" stroke-dasharray="3,3"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 0</Filter> 
+			&maxscale_zoom17;
+			<LineSymbolizer stroke="#ffffff" stroke-width="4"/>
+			<LineSymbolizer stroke="#aaaabb" stroke-width="1" stroke-dasharray="3,3"/>
+		</Rule>
+	</Style>
+	<Style name="Дорога_односторонняя_Подложка">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="2" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="6" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="12" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.3" stroke-width="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom12;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.5" stroke-width="1" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="7" smooth="1"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="11" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="22" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="8"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="16"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="32"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="11"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="42"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="26"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="52"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="31"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="62"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="36"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="72"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="41"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="82"  />
+		</Rule>
+	</Style>
+	<Style name="Дорога_односторонняя">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="1" smooth="1" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="2" smooth="1" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="4" smooth="1" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="8" smooth="1" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="3" smooth="1" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="5" smooth="1" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-2.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-2.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="6"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="14"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-3.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="28"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-3.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="9"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="19"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-4.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="38"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-4.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="24"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-5.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="48"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-5.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="29"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-6.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="58"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-6.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="34"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-7.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 7</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="68"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-7.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="39"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-8.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="78"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-8.png"/>
+			&arrow;
+		</Rule>
+	</Style>
+	<Style name="Дорога односторонняя, широкая, одна полоса. Подложка">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" smooth="1"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="6" smooth="1"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="9" smooth="1"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="18" smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Дорога односторонняя, широкая, одна полоса.">
+		<Rule>
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="2" smooth="1" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="4" smooth="1" />
+		</Rule>
+		<Rule>
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="7" smooth="1" />
+			&arrow;
+		</Rule>
+		<Rule>
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="14" smooth="1" />
+			&arrow;
+		</Rule>
+	</Style>
+	<Style name="Тоннель_односторонний_Подложка">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="6" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="9" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="18" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="7" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="11" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="22" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="8"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="16"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="32"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="11"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="42"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="27"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="54"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="31"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="62"  />
+		</Rule>
+	</Style>
+	<Style name="Тоннель_односторонний">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="7" stroke-linejoin="round" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="14" stroke-linejoin="round" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="3" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="5" stroke-linejoin="round" />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-2t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-2t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="6"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="14"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-3t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 3</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="28"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-3t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="9"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="19"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-4t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="38"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-4t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="24"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-5t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 5</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="48"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-5t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="11"  />
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="29"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-1-6t.png"/>
+			&arrow;
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="58"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-1-6t.png"/>
+			&arrow;
+		</Rule>
+	</Style>
+	<Style name="Дорога_двухсторонняя_Подложка">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="6" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="12" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.3" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom12;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.5" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="7" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="11" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="22" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="1"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="11"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="42"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="16"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="31"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="62"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="10"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="41"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="82"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="7"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="25"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="51"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="102"  />
+		</Rule>
+	</Style>
+	<Style name="Дорога_двухсторонняя">
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="2" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="4" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 1 or [jil] = 0</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="#FFFFFF" stroke-opacity="1" stroke-width="8" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="3" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-opacity="1" stroke-width="5" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-2.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-2.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="9"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="19" />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-4.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="38" />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-4.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="14"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="29"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-6.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="58"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-6.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="9"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="19"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="39"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-8.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="78"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-8.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="6"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="12"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="24"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="49"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-10.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&bigroadcolor;" stroke-width="98"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-10.png"/>
+		</Rule>
+	</Style>
+	<Style name="Тоннель_двухсторонний_Подложка">
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom11;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.3" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom12;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="0.5" stroke-width="1" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="4" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="7" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="11" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-opacity="1" stroke-width="22" stroke-linejoin="round"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="11"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="42"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="16"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="31"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="62"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="10"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="21"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="41"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="82"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="4"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="7"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="13"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="26"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="51"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&downcolor;" stroke-width="102"  />
+		</Rule>
+	</Style>
+	<Style name="Тоннель_двухсторонний">
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom13;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="3" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-opacity="1" stroke-width="5" stroke-linejoin="round" />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-2t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 2</Filter> 
+			&maxscale_zoom18;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-2t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="9"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="19"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-4t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 4</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="38"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-4t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="14"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="29"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-6t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 6</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="58"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-6t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="9"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="19"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="39"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-8t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 8</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="78"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-8t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom11;
+			&minscale_zoom13;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="3"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom14;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="6"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom15;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="12"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="24"  />
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="49"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/17-2-10t.png"/>
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom18;
+			<LineSymbolizer stroke="&tunnelcolor;" stroke-width="98"  />
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/18-2-10t.png"/>
+		</Rule>
+	</Style>
+	<Style name="Подземный переход">
+		<Rule>
+			&maxscale_zoom16;
+			<PolygonSymbolizer fill="#3e7a7a" fill-opacity="0.3"/>
+		</Rule>
+	</Style>
+	<Style name="Надземный переход">
+		<Rule>
+			&maxscale_zoom16;
+			<BuildingSymbolizer fill="#FFFFCC" height="0.00005" fill-opacity="1" />
+		</Rule>
+	</Style>
+	<Style name="Зебра">
+		<Rule>
+			&maxscale_zoom17;
+			&minscale_zoom17;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/zebra.png"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom18;
+			<LinePatternSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/road/zebra18.png"/>
+		</Rule>
+	</Style>
+	<Style name="Трамвай">
+		<Rule>
+		<Filter>[jil] = 1</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#eb726c" stroke-width="2" smooth="1" />
+			<LineSymbolizer stroke="#eb726c" stroke-width="8" stroke-dasharray="2,16" smooth="1"/>
+		</Rule>
+		<Rule>
+			&maxscale_zoom17;
+			<LineSymbolizer stroke="#eb726c" stroke-width="1" smooth="1" />
+			<LineSymbolizer stroke="#eb726c" stroke-width="4" stroke-dasharray="1,8" smooth="1"/>
+		</Rule>
+	</Style>
+	<Style name="Монорельс">
+		<Rule>
+			&maxscale_zoom12;
+			&minscale_zoom16;
+			<LineSymbolizer stroke="#689CD2" stroke-width="1"  />
+			<LineSymbolizer stroke="#689CD2" stroke-width="5" stroke-dasharray="5,3"/>
+		</Rule>
+	</Style>
+	<Style name="Метро_станции">
+		<Rule>
+		<Filter>[obj_st_id] = 140 and [jil] &lt; 31</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom15;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/msvg/[jil].svg" transform="scale(0.5,0.5)"/> 
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 140 and [jil] &lt; 31</Filter> 
+			&maxscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/msvg/[jil].svg" allow-overlap="true"/> 
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 140 and [jil] &gt; 30</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom15;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/msvg/[jil].svg" transform="scale(0.1)"/> 
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 140 and [jil] &gt; 30</Filter> 
+			&maxscale_zoom16;
+			<MarkersSymbolizer file="/storage/www/moscowmap/moscowmap.ru/htdocs/leaflet/img/msvg/[jil].svg" allow-overlap="true" transform="scale(0.2)"/> 
+		</Rule>
+	</Style>
+	<Style name="Метро_станции_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 140</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer dy="15" placement-type="list" size="15" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" halo-fill="white" wrap-width="50">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 140</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer allow-overlap="true" dy="15" placement-type="list" size="16" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="3" halo-fill="white">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Иконки_остановки_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 80</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer allow-overlap="false" dy="15" placement-type="list" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" halo-fill="white" wrap-width="50">[obj_fullname]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Достопримечательности_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 137</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<TextSymbolizer allow-overlap="false" dy="4" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1.5" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 137</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer allow-overlap="false" dy="4" size="15" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="2" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Парки_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 63</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="12" fill="#217d44" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 63</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="15" fill="#217d44" opacity="1" fontset-name="book-fonts" halo-radius="2" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Реки_площ_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 27</Filter> 
+			&maxscale_zoom15;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="13" fill="#153a6b"  opacity="1" text-transform="capitalize" fontset-name="book-fonts"  wrap-width="20" placement="interior" allow-overlap="false">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 27</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="15" fill="#153a6b" opacity="1" text-transform="capitalize" fontset-name="book-fonts" wrap-width="20" placement="interior" allow-overlap="false">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Кладбище_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 8</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="11" fill="#286028" opacity="1" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 8</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="14" fill="#286028" opacity="1" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Платформы_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 79</Filter> 
+			&maxscale_zoom16;
+			<TextSymbolizer allow-overlap="false" dy="15" placement-type="list" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" halo-fill="white" wrap-width="50">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Значки_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 16</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer allow-overlap="false" dy="15" placement-type="list" size="14" fill="#111111" opacity="0.7" fontset-name="book-fonts" halo-radius="1" halo-fill="white" wrap-width="50">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Район_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 1</Filter> 
+			&maxscale_zoom12;
+			&minscale_zoom14;
+			<TextSymbolizer avoid-edges="true" size="10" fill="#000000" opacity="0.75" text-transform="uppercase" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Округа_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 70</Filter> 
+			&maxscale_zoom10;
+			&minscale_zoom11;
+			<TextSymbolizer avoid-edges="false" size="11" fill="#C05040" opacity="1" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Пристани_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 20 and [jil]=0</Filter> 
+			&maxscale_zoom16;
+			&minscale_zoom16;
+			<TextSymbolizer allow-overlap="false" dy="15" placement-type="list" size="11" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" halo-fill="white" wrap-width="50">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 20 and [jil]=0</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer allow-overlap="false" dy="15" placement-type="list" size="14" fill="#111111" opacity="1" fontset-name="book-fonts" halo-radius="1" halo-fill="white" wrap-width="50">[obj_name]
+				<Placement dy="-15"/>
+				<Placement dx="15"/>
+				<Placement dx="-15"/>
+			</TextSymbolizer>
+		</Rule>
+	</Style>
+	<Style name="Территории_текст">
+		<Rule>
+		<Filter>[obj_st_id] = 65</Filter> 
+			&maxscale_zoom14;
+			&minscale_zoom16;
+			<TextSymbolizer avoid-edges="true" size="12" fill="#656565" opacity="0.6" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+		<Rule>
+		<Filter>[obj_st_id] = 65</Filter> 
+			&maxscale_zoom17;
+			<TextSymbolizer avoid-edges="true" size="15" fill="#656565" opacity="0.6" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="line" halo-fill="white">[obj_name]</TextSymbolizer>
+		</Rule>
+	</Style>
+
+	<Layer name="Зеленые_насаждения" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Зеленые_насаждения</StyleName>
+		<StyleName>Сады</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id IN (2, 4) and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дачные_участки_поляна" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дачные_участки_поляна</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 3 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Нежилые кварталы" status="off" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Нежилые кварталы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 6 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Кварталы" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Кварталы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 7 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Промплощадки" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Промплощадки</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 60 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Кладбище" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Кладбище</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 8 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Болото" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Болото</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 11 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Парки" status="off" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Парки</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 63 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Тоннель_односторонний_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Тоннель_односторонний_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 105 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Тоннель_двухсторонний_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Тоннель_двухсторонний_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 116 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Тоннель_односторонний" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Тоннель_односторонний</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 105 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Тоннель_двухсторонний" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Тоннель_двухсторонний</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 116 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Реки (лин.)" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Реки (лин.)</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 22 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Реки (площ.)" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Реки (площ.)</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 27 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Остров" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Остров</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 28 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Железные дороги" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Железные дороги</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 17 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Метро_линии_надземные" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_линии_надземные</StyleName>
+		<Datasource>
+		&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 62 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="гаражи" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>гаражи</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 66 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Ограды замк." status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Ограды замк.</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 67 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Ограды" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Ограды</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 68 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Стадионы" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Стадионы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 64 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дороги" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дороги</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 52 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Средняя_дорога_подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Средняя_дорога_подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 74 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Большая_дорога_подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Большая_дорога_подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 73 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога главная1" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога главная1</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 69 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дороги1" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дороги1</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 52 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога главная2" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога главная2</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 69 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога_пешеходная" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_пешеходная</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 138 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога_односторонняя_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 96 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога односторонняя, широкая, одна полоса. Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога односторонняя, широкая, одна полоса. Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 131 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога_двухсторонняя_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_двухсторонняя_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 109 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дворовые_проезды_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дворовые_проезды_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id IN (13, 14) and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Средняя_дорога" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Средняя_дорога</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 74 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Большая_дорога" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Большая_дорога</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 73 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дворовые_проезды" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дворовые_проезды</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 14 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дворовые_проезды_односторонние" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дворовые_проезды_односторонние</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 13 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога_односторонняя" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 96 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога односторонняя, широкая, одна полоса." clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога односторонняя, широкая, одна полоса.</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 131 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дорога_двухсторонняя" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_двухсторонняя</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 109 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Трамвай" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Трамвай</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 135 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Зебра" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Зебра</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 125 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Платформы" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Платформы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 61 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Дома" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дома</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, floors, jil from mm_objects WHERE obj_st_id = 48 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Надземный переход" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Надземный переход</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 130 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Монорельс" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Монорельс</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 136 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Велодорожка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Велодорожка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 23 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_односторонняя_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 133 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_двухсторонняя_Подложка" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_двухсторонняя_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 113 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_односторонняя" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 133 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_двухсторонняя" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_двухсторонняя</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 113 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_односторонняя_Подложка2" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя_Подложка</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 141 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Эстакада_односторонняя2" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Дорога_односторонняя</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 141 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Подземный переход" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Подземный переход</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 126 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Город" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Город</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 45 and floors = '0' and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Районы" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Районы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 1 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Округа" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Округа</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 70 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Иконки остановки" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Иконки остановки</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 80 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Пристани" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Пристани</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 20 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Метро_линии_подложка" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_линии_подложка</StyleName>
+		<Datasource>
+&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 19 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Метро_линии" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_линии</StyleName>
+		<Datasource>
+&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 19 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Иконки платформы" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Иконки платформы</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 79 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Метро_выходы" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_выходы</StyleName>
+		<Datasource>
+&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 15 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Метро_станции" clear-label-cache="on" status="off" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_станции</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 140 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Кремлевская_стена" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+			<StyleName>Кремлевская_стена</StyleName>
+			<Datasource>
+	&datasource;
+				<Parameter name="table">(select obj_name, obj_geom, jil from mm_objects WHERE obj_st_id = 139 and obj_map_id = &mapid;) as obj</Parameter>
+			</Datasource>
+	</Layer>
+	<Layer name="Кремль" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+			<StyleName>Кремль</StyleName>
+			<Datasource>
+	&datasource;
+				<Parameter name="table">(select obj_fullname, obj_geom, jil from mm_objects WHERE obj_st_id = 143 and obj_map_id = &mapid;) as obj</Parameter>
+			</Datasource>
+	</Layer>
+	<Layer name="Подписи" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Метро_станции</StyleName>
+		<StyleName>Метро_станции_текст</StyleName>
+		<StyleName>Иконки_остановки_текст</StyleName>
+		<StyleName>Достопримечательности_текст</StyleName>
+		<StyleName>Парки_текст</StyleName>
+		<StyleName>Реки_площ_текст</StyleName>
+		<StyleName>Кладбище_текст</StyleName>
+		<StyleName>Платформы_текст</StyleName>
+		<StyleName>Округа_текст</StyleName>
+		<StyleName>Пристани_текст</StyleName>
+		<StyleName>Территории_текст</StyleName>
+		<StyleName>Дороги_текст</StyleName>
+		<StyleName>Дома_текст</StyleName>
+		<StyleName>Значки_текст</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_fullname, obj_name, obj_geom, obj_st_id, obj_class_id, jil from mm_objects WHERE obj_st_id IN (140, 80, 137, 63, 27, 8, 79, 70, 20, 65, 52, 69, 94, 96, 105, 109, 113, 116, 131, 133, 138, 48) and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	
+	<Layer name="Район_текст" clear-label-cache="off" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Район_текст</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, obj_st_id from mm_objects WHERE obj_st_id =  1  AND "obj_name" LIKE '%АО%' and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	
+	<Style name="Достопримечательности">
+		<Rule>
+		<Filter>[jil] = 10</Filter> 
+			&maxscale_zoom10;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 11</Filter> 
+			&maxscale_zoom11;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 12</Filter> 
+			&maxscale_zoom12;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 13</Filter> 
+			&maxscale_zoom13;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 14</Filter> 
+			&maxscale_zoom14;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+		<Rule>
+		<Filter>[jil] = 15</Filter> 
+			&maxscale_zoom15;
+			<PointSymbolizer file="[floors]" allow-overlap="false" /> 
+		</Rule>
+	</Style>
+	<Layer name="Значки" clear-label-cache="on" status="off" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Значки</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, floors, jil from mm_objects WHERE obj_st_id = 16 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Достопримечательности" clear-label-cache="on" status="on" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Достопримечательности</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom, floors, jil from mm_objects WHERE obj_st_id = 137 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="Парковки" clear-label-cache="on" status="off" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+		<StyleName>Парковки</StyleName>
+		<Datasource>
+			&datasource;
+			<Parameter name="table">(select obj_name, obj_geom from mm_objects WHERE obj_st_id = 142 and obj_map_id = &mapid;) as obj</Parameter>
+		</Datasource>
+	</Layer>
+
+
+</Map>
