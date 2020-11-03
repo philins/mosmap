@@ -9,5 +9,5 @@ COPY ./ /home/mapnik/
 
 WORKDIR /home/mapnik
 
-#CMD ./render.sh
-CMD bash
+CMD ./render.sh
+#CMD bash
