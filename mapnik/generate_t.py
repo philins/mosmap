@@ -200,8 +200,8 @@ if __name__ == "__main__":
     minZoom = 9
     maxZoom = 17
     #bbox = (35.7,54.13,40.17,56.58)  #all
-    bbox = (37.30,55.55,37.87,55.94)  #moscow
-    #bbox = (37.5677191,55.7851299,37.6100206,55.800485)  #savelovskaya
+    #bbox = (37.30,55.55,37.87,55.94)  #moscow
+    bbox = (37.5677191,55.7851299,37.6100206,55.800485)  #savelovskaya
     #bbox = (37.51,55.72,37.6658,55.813)  #ttk
 render_tiles(bbox, mapfile, tile_dir, minZoom, maxZoom)
 tend = datetime.now()
