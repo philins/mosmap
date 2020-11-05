@@ -1,14 +1,5 @@
 #!/bin/sh
 
-MYID="114012108"
-MSMP="-241542988"
-
-message(){
-m=$@
-curl -s -X POST https://api.telegram.org/bot516537755:AAFXv4iODt8--_3HUjAbr28QJP82JMrPu9A/sendMessage -d chat_id=$MYID -d text="$m"  -d "parse_mode=markdown" -d "disable_web_page_preview=true"
-}
-
-#message Docker started
 curl -u $FTPUSER:$FTPPASS -O -k sftp://62.76.90.57/storage/www/moscowmap/moscowmap.ru/leaflet/postgis2.csv
 curl -u $FTPUSER:$FTPPASS -O -k sftp://62.76.90.57/storage/www/moscowmap/moscowmap.ru/leaflet/postattr.sql
 curl -u $FTPUSER:$FTPPASS -O -k sftp://62.76.90.57/storage/www/moscowmap/moscowmap.ru/leaflet/smallicons.sql
